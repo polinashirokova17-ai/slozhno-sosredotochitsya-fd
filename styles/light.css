@@ -5,8 +5,41 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --section-title-color: #353430;
+  --card-title-color: #353430;
+  --button-border-color: #353430;
+  --button-hover-border-color: rgba(53, 52, 48, 0.4);
+  --background-image: url(../images/cover-image-light.png);
+  --rec-visibility: hidden;
+  
+  --title-shadow: 4px 4px 0 var(--accent-color);
+  --link-shadow: 2px 2px 0 var(--accent-color);
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root:not(.theme-dark):not(.theme-light) {
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --section-title-color: #353430;
+    --card-title-color: #353430;
+    --button-border-color: #353430;
+    --button-hover-border-color: rgba(53, 52, 48, 0.4);
+    --background-image: url(../images/cover-image-light.png);
+    --rec-visibility: hidden;
+    
+    --title-shadow: 4px 4px 0 var(--accent-color);
+    --link-shadow: 2px 2px 0 var(--accent-color);
+  }
+}
+
+.theme-light .header__rec {
+  visibility: var(--rec-visibility);
+}
+
