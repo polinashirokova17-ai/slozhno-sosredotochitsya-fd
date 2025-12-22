@@ -25,7 +25,7 @@
   :root:not(.theme-dark):not(.theme-light) {
     --bg-color: #fff1f7;
     --text-color: #353430;
-    --accent-color: #ff8dcb;
+    --accent-color: #353430;
     --title-color: #ffc2e6;
     --section-title-color: #353430;
     --card-title-color: #353430;
@@ -43,3 +43,6 @@
   visibility: var(--rec-visibility);
 }
 
+.theme-light .header__overlay {
+  display: none;
+}

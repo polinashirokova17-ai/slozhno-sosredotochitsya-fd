@@ -21,6 +21,16 @@
   --link-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.theme-dark .header__rec {
+.theme-dark 
+.header__rec {
   visibility: var(--rec-visibility);
+}
+
+.theme-dark 
+.header__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 40, 0.5);
+  pointer-events: none;
 }
