@@ -25,7 +25,7 @@
   :root:not(.theme-dark):not(.theme-light) {
     --bg-color: #fff1f7;
     --text-color: #353430;
-    --accent-color: #353430;
+    --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --section-title-color: #353430;
     --card-title-color: #353430;
