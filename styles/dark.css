@@ -5,16 +5,15 @@
 */
 
 :root.theme-dark {
-
-   --bg-color: #000028;
+  --bg-color: rgba(0, 0, 40, 1);
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --section-title-color: #ff0070;
-  --card-title-color: #000028;
+  --card-title-color: rgba(0, 0, 40, 1);
   --button-border-color: #ff0070;
   --button-hover-border-color: rgba(255, 0, 112, 0.4);
-  --background-image: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
   
   --title-shadow: 4px 4px 0 var(--accent-color);
@@ -24,13 +23,4 @@
 .theme-dark 
 .header__rec {
   visibility: var(--rec-visibility);
-}
-
-.theme-dark 
-.header__overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 40, 0.5);
-  pointer-events: none;
 }
