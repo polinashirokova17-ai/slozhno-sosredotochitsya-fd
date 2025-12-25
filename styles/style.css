@@ -26,35 +26,32 @@
 }
 
 .decorated-zone::before {
-  border-right: 1px solid var(--section-title-color);
-  border-top: 1px solid var(--section-title-color);
   top: 20px;
   right: 20px;
+  border-top: 1px solid var(--section-title-color);
+  border-right: 1px solid var(--section-title-color);
 }
 
 .decorated-zone::after {
-  border-bottom: 1px solid var(--section-title-color);
-  border-left: 1px solid var(--section-title-color);
   bottom: 20px;
   left: 20px;
+  border-bottom: 1px solid var(--section-title-color);
+  border-left: 1px solid var(--section-title-color);
 }
 
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  background-image: var(--background-image);
-  background-position: center;
-  background-size: cover;
-  min-block-size: 668px;
+  min-height: 100vh;
 }
 
 .header__rec {
   position: absolute;
+  top: 20px;
+  right: 48px;
   color: var(--accent-color);
   font-size: var(--font-size);
   line-height: 1.4;
-  top: 20px;
-  right: 48px;
 }
 
 .header__rec::after {
@@ -276,13 +273,13 @@
   }
 
   .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin: 150px 0 0;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .title-description {
-    inline-size: 364px;
     margin: 132px 20px 163px;
+    inline-size: 364px;
   }
 
   .section {
@@ -307,7 +304,6 @@
 
   .footer {
     padding: var(--padding-desktop);
-    min-height: 133vh;
   }
 
   .footer__title {
@@ -344,15 +340,15 @@
   }
 
   .header__title {
-    margin: 61px 0;
     max-width: 355px;
-    line-height: 83%;
+    margin: 61px 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    line-height: 83%;
   }
 
   .title-description {
-    inline-size: 355px;
     margin: 0;
+    inline-size: 355px;
   }
 
   .content {
@@ -382,13 +378,12 @@
   }
 
   .footer {
+    margin: 10px 0;
     padding: var(--padding-mobile);
-            min-height: 100vh;
-            margin: 10px 0 ;
   }
 
   .footer__title {
+    margin: 24px 0 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-            margin: 24px 0 0;
   }
 }
