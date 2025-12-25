@@ -1,12 +1,12 @@
 :root {
   
   --bg-color: rgba(0, 0, 40, 1);
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --section-title-color: #ff0070;
-  --card-title-color: #000028;
-  --button-border-color: #ff0070;
+  --text-color: rgba(241, 178, 206, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --section-title-color: rgba(255, 0, 112, 1);
+  --card-title-color: rgba(0, 0, 40, 1);
+  --button-border-color: rgba(255, 0, 112, 1);
   --button-hover-border-color: rgba(255, 0, 112, 0.4);
   
   
@@ -16,13 +16,14 @@
   --rec-visibility: visible;
   
  
-  --main-font: 'IBM Plex Mono';
+  --text-font: 'IBM Plex Mono';
   --font-size: 18px;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 
   --padding-mobile: 10px;
   --padding-desktop: 20px;
+  
   
  
   --title-shadow: 4px 4px 0 var(--accent-color);
@@ -31,6 +32,6 @@
 
 @media (width >= 768px) {
   :root {
-    --padding-mobile: 20px;
+    --padding-desktop: 20px;
   }
 }

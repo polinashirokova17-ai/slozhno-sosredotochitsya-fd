@@ -6,18 +6,35 @@
 
 :root.theme-dark {
   --bg-color: rgba(0, 0, 40, 1);
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --section-title-color: #ff0070;
+  --text-color: rgba(241, 178, 206, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --section-title-color: rgba(255, 0, 112, 1);
   --card-title-color: rgba(0, 0, 40, 1);
-  --button-border-color: #ff0070;
+  --button-border-color: rgba(255, 0, 112, 1);
   --button-hover-border-color: rgba(255, 0, 112, 0.4);
   --background-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
-  
   --title-shadow: 4px 4px 0 var(--accent-color);
   --link-shadow: 2px 2px 0 var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light):not(.theme-dark) {
+  --bg-color: rgba(0, 0, 40, 1);
+  --text-color: rgba(241, 178, 206, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --section-title-color: rgba(255, 0, 112, 1);
+  --card-title-color: rgba(0, 0, 40, 1);
+  --button-border-color: rgba(255, 0, 112, 1);
+  --button-hover-border-color: rgba(255, 0, 112, 0.4);
+  --background-image: url(../images/cover-image-dark.png);
+  --rec-visibility: visible;
+        
+  --title-shadow: 4px 4px 0 var(--accent-color);
+  --link-shadow: 2px 2px 0 var(--accent-color);
+  }
 }
 
 .theme-dark 
