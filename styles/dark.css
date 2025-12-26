@@ -13,7 +13,7 @@
   --card-title-color: rgba(0, 0, 40, 1);
   --button-border-color: rgba(255, 0, 112, 1);
   --button-hover-border-color: rgba(255, 0, 112, 0.4);
-  --background-image: url(../images/cover-image-dark.png);
+  --baground-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
   --title-shadow: 4px 4px 0 var(--accent-color);
   --link-shadow: 2px 2px 0 var(--accent-color);

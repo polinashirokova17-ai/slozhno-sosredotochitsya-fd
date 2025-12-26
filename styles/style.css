@@ -7,7 +7,8 @@
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   line-height: 1.3;
-  background-image: url(/images/cover-image.png);
+  background-color: var(--bg-color);
+  background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -42,8 +43,9 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-height: 668px;
-  background-color: var(--bg-color);
+  block-size: 100vb;
+  min-block-size: 668px;
+
 }
 
 .header__rec {
@@ -130,6 +132,7 @@
   flex: 1;
   padding: 30px var(--padding-desktop);
   background-color: var(--bg-color);
+ 
 }
 
 .section {
@@ -240,9 +243,11 @@
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 668px;
+  block-size: 100vb;
+  min-block-size: 668px;
   padding: var(--padding-mobile);
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
+
 }
 
 .footer__title {
