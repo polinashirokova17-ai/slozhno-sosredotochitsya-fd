@@ -45,7 +45,6 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vb;
   min-block-size: 668px;
-
 }
 
 .header__rec {
@@ -132,7 +131,6 @@
   flex: 1;
   padding: 30px var(--padding-desktop);
   background-color: var(--bg-color);
- 
 }
 
 .section {
@@ -186,10 +184,6 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px 0 0;
-}
-
-.card__content p {
-  margin-bottom: 10px;
 }
 
 .card__content a {
@@ -252,7 +246,6 @@
   min-block-size: 668px;
   padding: var(--padding-mobile);
   background-color: var(--bg-color);
-
 }
 
 .footer__title {
@@ -311,6 +304,7 @@
 
   .card-container {
     flex-direction: column;
+    display: flex;
   }
 
   .card-container_tips {
